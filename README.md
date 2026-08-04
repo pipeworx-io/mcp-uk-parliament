@@ -1,20 +1,24 @@
-# mcp-uk-parliament
+# @pipeworx/uk-parliament
 
-UK Parliament MCP — Members, Bills, Hansard APIs
+UK Parliament MCP — official Westminster APIs: Members, Bills, Hansard (debates). No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search_members` | Search MPs and Lords by name / party / location / house. |
-| `get_member` | Member detail by member id. |
-| `search_bills` | Search bills by title / session / stage / sponsoring member. |
-| `get_bill` | Bill detail. |
-| `bill_stages` | All stages of a bill (introduction, readings, committee, royal assent). |
-| `search_hansard` | Search debate contributions in Hansard. |
-| `recent_divisions` | Recent recorded votes (divisions). |
+- `search_members(name?, location?, party?, house?, is_current?, take?, skip?)` — MPs and Lords
+- `get_member(id, includes?)` — member detail
+- `search_bills(query?, session?, stage?, member_id?, current_house?, take?, skip?)` — bills
+- `get_bill(bill_id)` — bill detail
+- `bill_stages(bill_id)` — all stages of a bill
+- `search_hansard(query, house?, date_from?, date_to?, member_id?, take?, skip?)` — debates / contributions
+- `recent_divisions(house?, date_from?, take?)` — recent votes
+
+## Data sources
+
+- Members: `https://members-api.parliament.uk/api/`
+- Bills: `https://bills-api.parliament.uk/api/v1/`
+- Hansard: `https://hansard-api.parliament.uk/`
 
 ## Quick Start
 
@@ -30,7 +34,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -54,7 +58,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
