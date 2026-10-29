@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-uk-parliament",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "UK Parliament MCP — Members, Bills, Hansard APIs",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-uk-parliament": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "uk-parliament"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-uk-parliament.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/uk-parliament",
   "pipeworx": {
-    "sourceHash": "v1-5ed18bf0c69289384e54f74c60995e4cedc3975b40be998249ccc7df5be8a5fd",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "uk-parliament",
+    "gatewaySlug": "uk-parliament",
+    "sourceHash": "v1-63b2803572e2a84351513bd43cb79bd5a8312a7e3dddf658b804a41b0ff66d6a",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
