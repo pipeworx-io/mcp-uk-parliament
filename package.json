@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-uk-parliament",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "UK Parliament MCP — Members, Bills, Hansard APIs",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "uk-parliament",
     "gatewaySlug": "uk-parliament",
-    "sourceHash": "v1-63b2803572e2a84351513bd43cb79bd5a8312a7e3dddf658b804a41b0ff66d6a",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-60fa605b2495040ee0e1ba670af9508080c861f74613fb550b0f8b67a55599ec",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }

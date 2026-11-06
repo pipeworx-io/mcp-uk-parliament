@@ -2,7 +2,7 @@
 
 UK Parliament MCP — official Westminster APIs: Members, Bills, Hansard (debates). No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1857+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1866+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
@@ -16,8 +16,8 @@ Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents 
 
 ## Data sources
 
-- Members: `https://members-api.parliament.uk/api/`
-- Bills: `https://bills-api.parliament.uk/api/v1/`
+- Members.
+- Bills.
 - Hansard: `https://hansard-api.parliament.uk/`
 
 ## Quick Start
@@ -64,7 +64,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1857+ data sources. The
+Both URLs reach the same gateway and the same 1866+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 
